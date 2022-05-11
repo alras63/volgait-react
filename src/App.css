@@ -1,38 +1,250 @@
-.App {
+html {
+  height: 100%;
+  background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7px;
+}
+
+#screen_start header {
+  min-height: 66px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 7px rgba(58, 72, 80, 0.07);
+  display: flex;
+  align-items: center;
+}
+
+#screen_q header {
+  min-height: 66px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 7px rgba(58, 72, 80, 0.07);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#screen_start header .logo img {
+  max-width: 120px;
+  max-height: 38px;
+}
+
+.btn-rounded {
+  background: #DEDEDE;
+  border-radius: 60px;
+  min-width: 181px;
+  min-height: 48px;
+  padding: 10px 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-rounded.active {
+  background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
+}
+
+.main_block {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#screen_start .main_block img {
+  margin-top: 65px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_block h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #2196F3;
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#screen_start .main_block p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 174%;
+  text-align: center;
+  color: #3A4850;
+}
+
+#screen_start .main_block a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.progressbar {
+  width: 100%;
+  height: 8px;
+  background: #D8D8D8;
+}
+
+.progressbar .active {
+  height: 8px;
+  background: linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
+}
+
+.btn-tap {
+  background: #FFFFFF;
+  border: 1px solid rgba(231, 235, 237, 0.80141);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-tap .icon {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 0 !important;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-tap p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #425A60;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-tap {
+  text-decoration: none;
+}
+
+.main_block .answers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 14px;
+}
+
+#screen_q .text_q {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #0F0F0F;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+#screen_q footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#screen_q footer .both {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #3A4850;
+
+}
+
+.q_3 h1 {
+  margin-top: 5px;
+}
+
+.q_sizes img {
+  margin-bottom: 30px;
+}
+
+.tap_hor,
+.tap_faces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: #0F0F0F;
+}
+
+.tap_faces {
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  color: #425A60;
+}
+
+.tap_faces img {
+  border-right: 1px solid #DEDEDE;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+.q_8 .small, .q_10 .small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #697580;
+}
+
+.answers.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn-tap.tap-image {
+  padding: 15px
+}
+
+.btn-tap.tap-image img {
+  min-width: 128px;
+  min-height: 63px;
+}
+
+.tap-image p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #697580;
+  margin-top: 15px;
+}
+
+.q_10 .answers.grid .tap-image {
+  min-height: 65px;
+}
+.q_10 .answers.grid .tap-image img {
+  max-height: 32px;
+  min-height: auto;
 }
